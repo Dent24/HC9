@@ -7,10 +7,24 @@
   font-family: 微軟正黑體;
 }
 
+body {
+  background: #8b8b8b;
+  padding: 20px;
+}
+
+#restaurant {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 #restaurant #box {
-  -webkit-box-shadow: 0 5px 5px solid rgba(0, 0, 0, 0.5);
-          box-shadow: 0 5px 5px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
   padding: 30px;
+  background: white;
 }
 
 #restaurant #box h1 {

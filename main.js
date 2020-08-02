@@ -11,7 +11,6 @@ new Vue({
         xhr.onload = () => {
             var x = JSON.parse(xhr.responseText);
             this.datas = x;
-            console.log(x);
         }
     },
 })
